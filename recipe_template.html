@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
 </head>
 <body>
     <a href="shopping_list.html">Shopping list</a>
 
     <!-- Stage 1: List of ingredients in the recipe -->
     <ul id="recipe-list">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><input name="ingredient" type="checkbox" checked>
+            <label>Ingredient 1</label></li>
+        <li><input name="ingredient" type="checkbox" checked>
+            <label>Ingredient 2</label></li>
     </ul>
-    <button id="add-ing">Add Ingredient</button>
-    <script src="index.js"></script>
+    <button id="add-ing">Add Ingredients</button>
+
+    <div id="empty-alert"></div> <!-- When the Add Ingredients button is clicked, the banner is inserted here -->
+    <script src="recipe.js"></script>
 </body>
 </html>
