@@ -1,11 +1,98 @@
+main {
+    margin: 2rem;
+}
+
+.site-head {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.site-title {
+    align-content: center;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 75%;
+}
+
+.head-img {
+    justify-content: flex-start;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 25%;
+    min-width: 50px;
+}
+
+.no-wrap {
+    text-wrap: nowrap;
+}
+
+.intro {
+    padding: 5% 10%;
+    text-align: justify;  
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.food-pic img {
+    border-radius: 10%;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.food-pic span {
+    display: none;
+}
+
+.food-pic:hover {
+    opacity: 0.7;
+}
+
+.food-pic:hover span {
+    display: block;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 .topnav {
     overflow: hidden;
+    position: sticky;
+    top: 5%;
+    color: white;
   }
 
+
 #menu-icon {
-    position: fixed;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10%;
 }
 
 #page-links {
-    display: none
+    display: none;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#page-links a {
+    color: black;
+}
+
+#page-links a:hover {
+    background-color: grey;
 }
