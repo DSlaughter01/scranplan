@@ -1,0 +1,11 @@
+.topnav {
+    overflow: hidden;
+  }
+
+#menu-icon {
+    position: fixed;
+}
+
+#page-links {
+    display: none
+}

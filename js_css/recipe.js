@@ -7,6 +7,7 @@ let alreadyClicked = false;
 
 // Adds ingredients to shopping list 
 addIng.addEventListener("click", function() {
+    console.log(localStorage['shoppingList'])
     if (alreadyClicked === false) {
     for (let i = 0; i < recipeList.length; i++)
     {
@@ -14,7 +15,7 @@ addIng.addEventListener("click", function() {
         ingString += '<li><input type="checkbox" checked><label>' + recipeList[i].innerText +'</label></li>'
         }
     }
-
+    ingString = localStorage.getItem('shoppingList') + ingString
     localStorage.setItem('shoppingList', ingString)
     emptyAlert.innerHTML = '<div class="alert alert-primary" role="alert">Ingredients added!</div>'
     alreadyClicked = true;    
