@@ -200,6 +200,10 @@ footer a:hover {
     padding: 10px;
 }
 
+.recipe-info h3 {
+    font-size: 1.5em;
+    padding-bottom: 2vh;
+}
 h2 {
     font-weight: bold;
 }
