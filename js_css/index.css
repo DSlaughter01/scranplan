@@ -1,17 +1,50 @@
+/* HELPFUL LINKS */
+/* https://css-tricks.com/viewport-sized-typography/ */
+
+/* GENERAL STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     margin: 2rem;
 }
 
+.container-fluid {
+    background-image: radial-gradient(grey, white)
+}
+
+@media screen and (min-width: 900px) {
+    .about {
+    padding: 0 3rem;
+    }
+    .intro, .recipes {
+        margin: 0rem 3rem 2rem 3rem;
+        padding: 1rem 3rem;
+    }
+    .definition {
+        margin: 0rem 3rem 0rem 3rem;
+        padding: 1rem 1rem;
+    }
+}
+
+/* HEADER */
 .site-head {
     display: flex;
     flex-direction: row;
     padding: 5%;
+    border-bottom: 1px solid grey;
+}
+
+h1 {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
 .site-title {
-    align-content: center;
-    justify-content: flex-end;
-    padding: 10px;
+    font-size: clamp(5vw, 7vw, 30px);
     width: 75%;
 }
 
@@ -20,79 +53,230 @@ main {
     border-radius: 50%;
     border: 3px solid black;
     width: 25%;
-    min-width: 50px;
+    height: 25%;
+    max-height: 30vh;
+    max-width: 30vh;
 }
 
 .no-wrap {
     text-wrap: nowrap;
 }
 
-.intro {
-    padding: 5% 10%;
-    text-align: justify;  
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.row {
-    justify-content: center;
-}
-
-.food-pic img {
-    border-radius: 10%;
-    width: 100%;
-    padding: 1rem;
-    height: auto;
-    overflow: hidden;
-}
-
-.food-pic span {
-    display: none;
-}
-
-.food-pic:hover {
-    opacity: 0.7;
-}
-
-.food-pic:hover span {
-    display: block;
-    position: absolute;
-    bottom: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
+/* NAVIGATION MENU */
 .topnav {
+    z-index: 1;
+    top: 0;
     overflow: hidden;
     position: sticky;
-    top: 5%;
     color: white;
   }
 
-
 #menu-icon {
-    background-color: grey;
+    margin-top: 1rem;
+    background-color: black;
     padding: 10px;
     border-radius: 10%;
 }
 
 #page-links {
     display: none;
-    background-color: white;
+    background-color: grey;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px;
+
 }
 
 #page-links a {
+    border-top: 2px solid black;
+    border-collapse: collapse;
     color: black;
+    padding: 5px;
+}
+
+#page-links a:nth-child(3) {
+    border-bottom: 2px solid black;
 }
 
 #page-links a:hover {
-    background-color: grey;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+.definition h2 {
+    text-align: center;
+    padding: 3vh;
+}
+
+.definition ol {
+    font-style: italic;
+}
+
+.definition a {
+    color: black;
+}
+
+.definition a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.intro {
+    margin: 5vh 0vw;
+    padding: 5vh 10vw;
+    text-align: justify;  
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.under, .recipes {
+    border-bottom: 1px solid grey;
+    margin-bottom: 2vh;
+}
+
+.recipes h3 {
+    text-align: center;
+    font-size: max(2rem, 7vh);
+}
+
+.subheading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.food-pic img {
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 100%;
+    overflow: hidden;
+    margin: 5% 0;
+}
+
+.food-pic span {
+    display: none;
+} 
+
+.food-pic:hover img {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+.food-pic:hover span {
+    width: 75%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #212529;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+footer a {
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* RECIPE PAGE */
+.recipe-info {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+ol {
+    text-align: justify;
+}
+
+.recipe-pic {
+    margin: rem 0;
+    border-radius: 10px;
+    max-width: 400px;
+    height: 80%; 
+    width: 80%; 
+    object-fit: contain;
+}
+
+#add-ing {
+    margin-bottom: 10px;
+}
+
+.alert {
+    margin-top: 1rem;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ABOUT PAGE */
+.quote {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.quoted {
+    font-size: 1.5rem;
+}
+
+.fancy {
+    margin-top: 0.6rem;
+    height: 91%;
+    text-align: justify;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.inline-image {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+.inline-image img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.inline-image figcaption {
+    text-align: center;
+}
+
+/* Coming soon page */
+.coming-soon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+
 }

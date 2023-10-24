@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Dan Slaughter">
+    <meta name="keywords" content="scran, vegetarian, recipes, Tom, Dan, plan">
+    <meta name="description" content="The homepage for Tom and Dan's recipes, straight from 31 Rue de Cuire, Lyon">
+
+    <title>Scran Plan</title>
+
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../js_css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 </head>
-<body>
-    <button><img src="../images/menu_FILL0_wght400_GRAD0_opsz24.png" alt="Menu"></button>
 
-    <a href="index.html">Home</a>
-    <p>Shopping list:</p>
-    <ul id="shop-list"></ul>
-    <button id="update-list">Update list</button>
-    <button id="delete-list">Delete list</button>
+<body class="container-fluid">
+    <header class="site-head">
+        <!-- Title and image -->
+        <img src="../images/tom_dan_homepage.jpeg" class="head-img" alt="Header Image">
+        <h1 class="site-title"><span class="no-wrap">Tom and Dan's&nbsp;</span><span class="no-wrap">Scran Plan</span></h1>
+    </header>
+    
+    <!-- Responsive menu -->
+    <section class="topnav">
+        <!-- Menu icon -->
+        <div class="top-bar">
+            <a href="javascript:void(0);" class="icon">
+                <img id="menu-icon" src="../images/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu">
+            </a>
+            <div></div>
+        </div>
 
-    <div id="empty-alert-rec"></div> <!-- When the Add Ingredients button is clicked, the banner is inserted here -->
+        <!-- Page links -->
+        <nav id="page-links">
+            <a href="about.html">About</a>
+            <a href="recipe_template.html">Recipes</a>
+            <a href="shopping_list.html">Shopping List</a>
+        </nav>
+    </section>
 
+    <main>
+        <h2>Shopping list:</h2>
+        <p>This is going to be a page to which you can add all the ingredients you need from the recipes, and create a convenient shopping list when you're cooking our recipes every day of the week. Unfortunately it doesn't quite work properly, but watch this space ...</p>
+
+        <ul id="shop-list"></ul>
+
+        <button class="btn btn-outline-dark" id="update-list">Update list</button>
+        <button class="btn btn-outline-dark" id="delete-list">Delete list</button>
+
+        <div id="empty-alert-rec"></div> <!-- When the Add Ingredients button is clicked, the banner is inserted here -->
+    </main>
+
+    <footer>
+        <a href="#">Jump to top</a>
+    </footer>
     <script src="../js_css/shopping_list.js"></script>
+    <script src="../js_css/all.js"></script>
 </body>
 </html>

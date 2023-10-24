@@ -3,94 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dan Slaughter">
+    <meta name="keywords" content="scran, vegetarian, recipes, Tom, Dan, plan">
+    <meta name="description" content="">
+
     <title>Scran Plan</title>
 
+    <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../js_css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 </head>
 
-<body>
+<body class="container-fluid">
     <header class="site-head">
         <!-- Title and image -->
         <img src="../images/tom_dan_homepage.jpeg" class="head-img" alt="Header Image">
-        <h1 class="site-title"><span class="no-wrap">Tom and Dan's</span> <span class="no-wrap">Scran Plan</span></h1>
+        <h1 class="site-title"><span class="no-wrap">Tom and Dan's&nbsp;</span><span class="no-wrap">Scran Plan</span></h1>
     </header>
     
     <!-- Responsive menu -->
     <section class="topnav">
         <!-- Menu icon -->
-        <a href="javascript:void(0);" class="icon">
-            <img id="menu-icon" src="../images/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu">
-        </a>
+        <div class="top-bar">
+            <a href="javascript:void(0);" class="icon">
+                <img id="menu-icon" src="../images/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu">
+            </a>
+            <div></div>
+        </div>
 
         <!-- Page links -->
         <nav id="page-links">
             <a href="about.html">About</a>
-            <a href="recipe_template.html">Recipes</a>
+            <a href="#recipe-start">Recipes</a>
             <a href="shopping_list.html">Shopping List</a>
         </nav>
-
     </section>
 
     <main>
-    <!-- Welcoming message -->
-    <p class="intro">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse vero nostrum temporibus deleniti sed. Odio quo omnis quasi expedita labore accusamus libero repellendus iusto explicabo dolores, assumenda qui nulla nisi eos earum blanditiis et reprehenderit consequatur sequi animi numquam, a repellat quae. Eius laudantium dolor quos? Eos, repellendus deleniti. Quasi, totam nobis. Repellat recusandae assumenda doloremque mollitia ea ex molestias voluptatum quia facilis impedit. Odio enim, eaque aperiam repellat laborum earum mollitia ullam quam blanditiis velit, sequi consequatur illo, veritatis animi quis cum labore sed facilis? Eaque inventore nobis amet esse, asperiores omnis, recusandae distinctio neque enim molestiae fuga minus!
-    </p>
+
+    <!-- Scran definition-->
+    <section class="definition">
+        <div class="center">
+        <h2>Scran (definition):</h2>
+
+        <div class="row">
+            <ol>
+            <li><div class="under">
+                <p>
+                A term used for food generally in the north of England, originally used by the British Royal Navy.
+                </p>
+                <p>
+                Example: "Let's go gets some scran, I'm starving"
+                </p>
+                <p>
+                Source: <a href="https://www.urbandictionary.com/define.php?term=Scran">Urban Dictionary</a>
+                </p>
+            </div></li>
+
+            <li><div class="under">
+                <p>(slang) to eat (v)</p>
+                <p>
+                Third-person singular simple present: scrans<br>
+                Present participle: scranning<br>
+                Simple past and past participle: scranned
+                </p>
+                
+                <p>Source: <a href="https://en.wiktionary.org/wiki/scran">Wiktionary</a>
+                </p>
+            </div></li>
+            </ol>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="definition">
+
+    </section>
+
+    <section class="intro">
+        <p>
+            Welcome to Tom and Dan's Scran Plan, where you can find all of the recipes from our time spent in a coloc in Lyon' Rue de Cuire. It's all veggie, some of it's even vegan, and every recipe is manageable on a budget. Very few of these recipes are ours, but they're some of our favourites. 
+        </p>
+
+        <p>
+            This website is under development, and its design and content is going to change a lot over the coming weeks.
+        </p>
+
+        <p>
+            The recipes are divided into 2 sections: "Cuire Classics", tried and trusted recipes straight from our kitchen; and "Contributions" from all of you, so if you have a great veggie recipe, please share it!
+        </p>
+    </section>
 
     <!-- Recipe search to be added, for now grid of images -->
-
-    <section class="recipes">
+    <div id="recipe-start" class="recipes">
+        <h3>Cuire Classics</h3>
+        <p class="subheading">
+            The recipes we love
+        </p>
         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                 <div class="food-pic">
-                    <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                    <span>Recipe</span>
+                    <a href="../recipes/pesto.html">
+                        <img src="../images/pesto.jpeg" alt="pesto pasta">
+                    <span>Hey Pesto</span></a>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-4">
+            <div class="col-sm-6 col-md-4 col-lg-4">
                 <div class="food-pic">
-                    <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                    <span>Recipe</span>
+                    <a href="../recipes/relation_toxique.html">
+                        <img src="../images/relation_toxique.jpeg" alt="relation toxique">
+                    <span>Relation toxique</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tomato_risotto.jpeg" alt="some food">
+                    <span>Cheese and tomato risotto</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>I'm having the gnocchi!</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Chickpea curry</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Fajitas</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Fried rice</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Risotto</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Broccoli pasta sauce</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="coming_soon.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Ragu</span></a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <section class="recipes">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="food-pic">
-                        <a href="about.html">
-                            <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                        <span>Recipe</span></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4">
-                    <div class="food-pic">
+    <section class="recipes">
+        <h3>Contributions</h3>
+        <p class="subheading">
+            Recipes from friends
+        </p>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="recipe_template.html">
                         <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                        <span>Recipe</span>
-                    </div>
+                    <span>Recipe</span></a>
                 </div>
             </div>
-
-            <section class="recipes">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="food-pic">
-                            <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                            <span>Recipe</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="food-pic">
-                            <img src="../images/tom_dan_homepage.jpeg" alt="some food">
-                            <span>Recipe</span>
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
                 </div>
-        
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="food-pic">
+                    <a href="about.html">
+                        <img src="../images/tom_dan_homepage.jpeg" alt="some food">
+                    <span>Recipe</span></a>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     </main>
     <footer>
